@@ -13,10 +13,10 @@ process.stdin.on('readable', function(){
                 case '/language':
                     process.stdout.write('SystemLanguage: '+process.env.lang + '\n');
                     break;
-            case '/exit':
-                process.stdout.write('Quitting app!\n');
-                process.exit();
-                break;
+                case '/exit':
+                    process.stdout.write('Quitting app!\n');
+                    process.exit();
+                    break;
             default:
                 process.stderr.write('Wrong instruction!\n');
         };   
